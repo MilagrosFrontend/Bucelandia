@@ -1,0 +1,322 @@
+
+body {
+    display: grid;
+    place-items: center;
+    counter-reset: score;
+    margin: 0;
+    height: 628px;
+    width: 100%;
+    
+}
+.phone {
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    background:
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+    radial-gradient(circle closest-side at 42% 22%, #d35 43%, rgba(221,51,85,0) 45%),
+    radial-gradient(circle closest-side at 58% 22%, #d35 43%, rgba(221,51,85,0) 45%),
+    radial-gradient(circle closest-side at 50% 35%, #d35 32%, rgba(221,51,85,0) 27%),
+
+    radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+    radial-gradient(circle closest-side at 40% 22%, #d35 40%, rgba(221,51,85,0) 45%) 52px 50px,
+    radial-gradient(circle closest-side at 60% 22%, #d35 40%, rgba(221,51,85,0) 45%) 48px 50px,
+    radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 37%) 50px 50px;
+    background-color:#b03;
+    background-size:100px 100px;
+    -webkit-box-shadow: 3px 5px 44px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 44px 9px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 44px 9px rgba(0,0,0,0.75);
+}
+.phone h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    color: bisque;
+    font-family: cursive;
+}
+.phone p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: bisque;
+    font-family: cursive;
+}
+/*capas*/
+.layer-1 {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 450px;
+    right: 60px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    animation-name: layer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+    0% {
+        bottom: 0;
+    }
+    25% {
+        bottom: -80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.layer-1 input[type=checkbox] {
+    animation-name: bunny;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes bunny {
+    0% {
+        top: 0;
+    }
+    
+    25% {
+        top: 80px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 450px;
+    left: 60px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    animation-name: layer;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-2 input[type=checkbox] {
+    animation-name: bunny;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 390px;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 10px solid green;
+    background-color: brown;
+}
+.layer-4 {
+    position: absolute;
+    z-index: 4;
+    width: 80px;
+    height: 350px;
+    left: 15px;
+    bottom: 0; 
+    display: flex;
+    justify-content: center;
+
+    animation-name: layer;
+    animation-duration: 550ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-4 input[type=checkbox] {
+    animation-name: bunny;
+    animation-duration: 550ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-5 {
+    position: absolute;
+    z-index: 5;
+    background: papayawhip;
+    height: 290px;
+    width: 200px;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 10px solid green;
+    background-color: brown;
+    border-radius: 0 0 0 31px;
+}
+.layer-6 {
+    position: absolute;
+    z-index: 6;
+    width: 80px;
+    height: 250px;
+    right: 30px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    animation-name: layer;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-6 input[type=checkbox] {
+    animation-name: bunny;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.layer-7 {
+    position: absolute;
+    z-index: 7;
+    background: pink;
+    width: 150px;
+    height:190px;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 10px solid green;
+    background-color: brown;
+    border-radius: 0 0 31px 0;
+}
+.layer-8 {
+    position: absolute;
+    z-index: 8;
+    width: 200px;
+    height: 120px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+}
+
+.layer-9 {
+    position: absolute;
+    z-index: 9;
+    width: 120px;
+    height: 100px;
+    bottom: 0;
+    background: rgb(2, 68, 2);
+    border-radius: 0 0 0 31px;
+}
+.layer-10 {
+    position: absolute;
+    z-index: 10;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(2, 68, 2);
+    border-radius: 0 0 31px 0;
+}
+
+/* hasta acá las capas*/
+
+.left-ear--outer {
+    background-color: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+}
+.left-ear--inner{
+    background-color: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.right-ear--outer {
+    background-color: white;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+}
+.right-ear--inner{
+    background-color: pink;
+    border-radius: 90%;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+.head {
+    background-color: white;
+    border-radius: 50%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+.head__eye {
+    background-color: grey;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        height: 4px;
+    }
+    5% {
+        transform: translate(0px 2px);
+        height: 1px;
+    }
+    10% {
+        transform: translate(0px 0px);
+        height: 4px;
+    }
+}
+
+.head__eye--left {
+    left: 30px;
+}
+.head__eye--right {
+    right: 30px;
+}
+input [type=checkbox] {
+    cursor: pointer;
+}
+input:checked {
+    counter-increment: score;
+}
+.score::after {
+    content: counter(score);
+}
