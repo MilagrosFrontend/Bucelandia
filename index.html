@@ -10,8 +10,8 @@
 <body>
     <div class="phone">
         <h1>Bucelandia</h1>
-        <p>Score:</p>
-        <div class="layer-1"> <!--conejito uno-->
+        <p id="score">Score:</p>
+        <div class="layer-1" onclick="contador(10)"> <!--conejito uno-->
             <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -22,7 +22,7 @@
                 <div class="head__eye head__eye--right"></div>
             </div>
         </div>
-        <div class="layer-2"> <!--conejito dos-->
+        <div class="layer-2" onclick="contador(15)"> <!--conejito dos-->
             <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -34,7 +34,7 @@
             </div>
         </div> 
         <div class="layer-3"></div> <!--pared uno-->
-        <div class="layer-4"> <!--conejito tres-->
+        <div class="layer-4" onclick="contador(25)"> <!--conejito tres-->
             <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -46,7 +46,7 @@
             </div>
         </div> 
         <div class="layer-5"></div> <!--pared dos-->
-        <div class="layer-6"> <!--conejito cuatro-->
+        <div class="layer-6" onclick="contador(20)"> <!--conejito cuatro-->
             <input type="checkbox">
             <div class="left-ear--outer"></div>
             <div class="left-ear--inner"></div>
@@ -60,7 +60,8 @@
         <div class="layer-7"></div> <!--pared tres-->
         <div class="layer-8"></div> <!--cesped uno-->
         <div class="layer-9"></div> <!--cesped dos-->
-        <div class="layer-10"></div> <!--cesped tres-->
+        <div class="layer-10"></div><!--cesped tres-->
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
